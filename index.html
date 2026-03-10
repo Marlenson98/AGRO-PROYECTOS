@@ -1,146 +1,81 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Proyectos</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+
+    <header>
+        <h2>AGRO PROYECTOS S.A.S</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Soluciones Agropecuarias</h1>
+        <p>Soporte técnico, páginas web y soluciones digitales.</p>
+
+        <button onclick="contacto()">Contáctame</button>
+    </section>
+
+    <!-- CARRUSEL -->
+
+    <section class="slider">
+
+        <div class="slides" id="slides">
+
+            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
+            <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b">
+
+        </div>
+
+        <button class="prev" onclick="moverSlide(-1)">&#9664;</button>
+        <button class="next" onclick="moverSlide(1)">&#9654;</button>
+
+    </section>
+
+    <section class="servicios">
+
+        <div class="card">
+            <h3>Soporte Técnico</h3>
+            <p>Mantenimiento y Servicios Agricolas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Páginas Web</h3>
+            <p>Creación de páginas web para negocios.</p>
+        </div>
+
+        <div class="card">
+            <h3>Redes</h3>
+            <p>Configuración de redes y soluciones tecnológicas.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 - Mi Página Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        function contacto() {
+            window.location.href = "https://wa.me/573127380841";
         }
+    </script>
 
-        /* menú */
-
-        header {
-            background: #1e1e1e;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav {
-            background: #333;
-            padding: 10px;
-            text-align: center;
-        }
-
-            nav a {
-                color: white;
-                margin: 15px;
-                text-decoration: none;
-                font-weight: bold;
-            }
-
-                nav a:hover {
-                    color: #00bfff;
-                }
-
-        /* sección principal */
-
-        .hero {
-            position: relative;
-            height: 100vh;
-            padding: 150px;
-            text-align: center;
-            background-image: url("https://agropress.pe/wp-content/uploads/2022/09/Banano-peruano.jpg");
-            background-size: cover;
-            background-position: center;
-            color: white;
-            transition: opacity 0.5s ease;
-        }
-
-        .hero h1 {
-            font-size: 40px;
-        }
-
-            .hero button {
-                padding: 12px 25px;
-                font-size: 16px;
-                background: #00bfff;
-                border: none;
-                color: white;
-                cursor: pointer;
-            }
-
-        /* servicios */
-
-        .servicios {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 50px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            width: 250px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        /* footer */
-        footer {
-            background: #1e1e1e;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
-    </head>
-
-    <body>
-
-        <header>
-            <h2>AGRO PROYECTOS S.A.S</h2>
-        </header>
-
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-
-        <section class="hero">
-            <h1>Soluciones Agropecuarias</h1>
-            <p>Soporte técnico, páginas web y soluciones digitales.</p>
-
-            <button onclick="contacto()">Contáctame</button>
-        </section>
-
-        <section class="servicios">
-
-            <div class="card">
-                <h3>Soporte Técnico</h3>
-                <p>Mantenimiento y Servicios Agricolas.</p>
-            </div>
-
-            <div class="card">
-                <h3>Páginas Web</h3>
-                <p>Creación de páginas web para negocios.</p>
-            </div>
-
-            <div class="card">
-                <h3>Redes</h3>
-                <p>Configuración de redes y soluciones tecnológicas.</p>
-            </div>
-
-        </section>
-
-        <footer>
-            <p>© 2026 - Mi Página Web</p>
-        </footer>
-
-        <script>
-
-            function contacto() {
-                window.location.href = "https://wa.me/573127380841";
-            }
-
-        </script>
-
-    </body>
+</body>
 </html>
