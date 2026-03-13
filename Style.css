@@ -1,0 +1,146 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    background-image: url("patron banano.png");
+    background-repeat: repeat;
+    padding: 50px;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.logo-titulo h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* MENU */
+
+nav {
+    background-image: url("patro banano2.png");
+    background-repeat: repeat;
+    padding: 50px;
+    text-align: center;
+}
+
+    nav a {
+        color: white;
+        margin: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        nav a:hover {
+            color: #00bfff;
+        }
+
+/* HERO */
+
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://agropress.pe/wp-content/uploads/2022/09/Banano-peruano.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero button {
+        padding: 12px 25px;
+        font-size: 16px;
+        background: #00bfff;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+/* CARRUSEL */
+
+.slider {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+    .slides img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+/* BOTONES */
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* SERVICIOS */
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
