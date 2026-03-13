@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Agro Proyecto</title>
-    <link rel="icon" href="Agro.ico" type="image/png">
+    <link rel="icon" href="Agro.ico">
+    <link rel="stylesheet" href="Style.css">
+
+</head>
 
     <style>
 
@@ -133,13 +136,18 @@
             text-align: center;
             padding: 20px;
         }
+
     </style>
     </head>
 
 <body>
 
-    <header>
-        <h2>AGRO PROYECTOS S.A.S</h2>
+    <header class="header">
+        <div class="logo-titulo">
+            <img src="logo empresa2.PNG" class="logo">
+            <h1>AGRO PROYECTOS S.A.S</h1>
+        </div>
+
     </header>
 
     <nav>
@@ -169,9 +177,8 @@
         
         </div>
 
-        <!-- flechas -->
-        <button class="prev" onclick="cambiar(-1)">❮</button>
-        <button class="next" onclick="cambiar(1)">❯</button>
+        <button class="prev" onclick="moverSlide(-1)">❮</button>
+        <button class="next" onclick="moverSlide(1)">❯</button>
 
     </section>
 

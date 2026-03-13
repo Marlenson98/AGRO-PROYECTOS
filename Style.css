@@ -1,22 +1,40 @@
-﻿body
-{
+﻿body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* menú */
+/* HEADER */
 
-
-header {
-    background: #1e1e1e;
-    color: white;
-    padding: 15px;
-    text-align: center;
+.header {
+    background-image: url("patron banano.png");
+    background-repeat: repeat;
+    padding: 50px;
 }
 
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.logo-titulo h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* MENU */
+
 nav {
-    background: #333;
-    padding: 10px;
+    background-image: url("patro banano2.png");
+    background-repeat: repeat;
+    padding: 50px;
     text-align: center;
 }
 
@@ -31,15 +49,19 @@ nav {
             color: #00bfff;
         }
 
-/* sección principal */
+/* HERO */
 
-.hero{
-    padding:150px;
-    text-align:center;
-    background-image:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef");
-    background-size:cover;
-    background-position:center;
-    color:white;
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://agropress.pe/wp-content/uploads/2022/09/Banano-peruano.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
     .hero h1 {
@@ -58,8 +80,8 @@ nav {
 /* CARRUSEL */
 
 .slider {
-    width: 900px;
-    height: 400px;
+    width: 100%;
+    max-width: 900px;
     margin: 40px auto;
     overflow: hidden;
     position: relative;
@@ -67,18 +89,15 @@ nav {
 
 .slides {
     display: flex;
-    width: 100%;
-    height: 100%;
+    transition: transform 0.5s ease;
 }
 
     .slides img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        flex: 0 0 100%;
+        border-radius: 10px;
     }
 
-/* botones flechas */
+/* BOTONES */
 
 .prev, .next {
     position: absolute;
@@ -87,10 +106,9 @@ nav {
     background: rgba(0,0,0,0.5);
     color: white;
     border: none;
-    font-size: 30px;
-    padding: 10px 15px;
+    font-size: 25px;
+    padding: 10px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 .prev {
@@ -101,10 +119,7 @@ nav {
     right: 10px;
 }
 
-    .prev:hover, .next:hover {
-        background: rgba(0,0,0,0.8);
-    }
-/* servicios */
+/* SERVICIOS */
 
 .servicios {
     display: flex;
@@ -121,7 +136,7 @@ nav {
     text-align: center;
 }
 
-/* footer */
+/* FOOTER */
 
 footer {
     background: #1e1e1e;
