@@ -8,7 +8,7 @@
 .header {
     background-image: url("banano.png");
     background-repeat: repeat;
-    padding: 50px;
+    padding: 10px;
 }
 
 .logo-titulo {
@@ -34,7 +34,7 @@
 nav {
     background-image: url("banano.png");
     background-repeat: repeat;
-    padding: 50px;
+    padding: 10px;
     text-align: center;
 }
 
