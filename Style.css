@@ -1,6 +1,8 @@
 ﻿body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-repeat: repeat;
+    background-size: auto;
 }
 
 /* HEADER */
@@ -8,7 +10,7 @@
 .header {
     background-image: url("banano.png");
     background-repeat: repeat;
-    padding: 10px;
+    padding: 20px;
 }
 
 .logo-titulo {
@@ -34,7 +36,7 @@
 nav {
     background-image: url("banano.png");
     background-repeat: repeat;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -52,20 +54,22 @@ nav {
 /* HERO */
 
 .hero {
-    height: 60vh;
+    height: 100vh; /* ocupa toda la pantalla */
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("https://agropress.pe/wp-content/uploads/2022/09/Banano-peruano.jpg");
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("https://agropress.pe/wp-content/uploads/2022/09/Banano-peruano.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: white;
 }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 55px;
     }
 
     .hero button {
