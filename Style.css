@@ -54,7 +54,7 @@ nav {
 /* HERO */
 
 .hero {
-    height: 100vh; /* ocupa toda la pantalla */
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -68,18 +68,56 @@ nav {
     color: white;
 }
 
-    .hero h1 {
-        font-size: 55px;
+/* BURBUJA TITULO */
+
+.burbuja-titulo {
+    background: rgba(0,0,0,0.45);
+    padding: 20px 40px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    backdrop-filter: blur(5px);
+    animation: aparecer 1s ease;
+}
+
+/* BURBUJA TEXTO */
+
+.burbuja-texto {
+    background: rgba(0,0,0,0.35);
+    padding: 15px 35px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(5px);
+    animation: aparecer 1.8s ease;
+}
+
+/* ANIMACION */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
     }
 
-    .hero button {
-        padding: 12px 25px;
-        font-size: 16px;
-        background: #00bfff;
-        border: none;
-        color: white;
-        cursor: pointer;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
+
+/* TITULO */
+
+.hero h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+/* TEXTO */
+
+.hero p {
+    font-size: 24px;
+    margin: 0;
+}
+
 
 /* CARRUSEL */
 

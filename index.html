@@ -142,104 +142,112 @@
     </style>
     </head>
 
-<body>
+    <body>
 
-    <header class="header">
-        <div class="logo-titulo">
-            <img src="empresa.png" class="logo">
-            <h1>AGRO PROYECTOS S.A.S</h1>
-        </div>
+        <header class="header">
+            <div class="logo-titulo">
+                <img src="empresa.png" class="logo">
+                <h1>AGRO PROYECTOS S.A.S</h1>
+            </div>
 
-    </header>
+        </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
 
-    <section class="hero">
-        <h1>Soluciones Agropecuarias</h1>
-        <p>Soporte técnico, páginas web y soluciones digitales.</p>
+        <section class="hero">
 
-        <button onclick="contacto()">Contáctame</button>
-    </section>
+            <div class="burbuja-titulo">
+                <h1>Soluciones Agropecuarias</h1>
+            </div>
 
-    <section class="slider">
+            <div class="burbuja-texto">
+                <p>Soporte técnico, páginas web y soluciones digitales.</p>
+            </div>
 
-        <div class="slides" id="slides">
+            <button onclick="contacto()">Contáctame</button>
 
-            <img src="https://www.banabiosa.com/wp-content/uploads/2018/07/farm-of-bananas-1024x600.jpg">
+        </section>
 
-            <img src="https://efeagro.com/wp-content/uploads/2014/02/1360561-1.jpg">
 
-            <img src="https://png.pngtree.com/background/20230427/original/pngtree-banana-plant-in-the-forest-picture-image_2496097.jpg">
+        <section class="slider">
 
-            <img src="https://gadmunicipalbaba.gob.ec/img/noticias2025/fumigacion_en_varios_r/4.jpg">
-        
-        </div>
+            <div class="slides" id="slides">
 
-        <button class="prev" onclick="moverSlide(-1)">❮</button>
-        <button class="next" onclick="moverSlide(1)">❯</button>
+                <img src="https://www.banabiosa.com/wp-content/uploads/2018/07/farm-of-bananas-1024x600.jpg">
 
-    </section>
+                <img src="https://efeagro.com/wp-content/uploads/2014/02/1360561-1.jpg">
 
-    <section class="servicios">
+                <img src="https://png.pngtree.com/background/20230427/original/pngtree-banana-plant-in-the-forest-picture-image_2496097.jpg">
 
-        <div class="card">
-            <h3>Soporte Técnico</h3>
-            <p>Mantenimiento y servicios agrícolas.</p>
-        </div>
+                <img src="https://gadmunicipalbaba.gob.ec/img/noticias2025/fumigacion_en_varios_r/4.jpg">
 
-        <div class="card">
-            <h3>Páginas Web</h3>
-            <p>Creación de páginas web para negocios.</p>
-        </div>
+            </div>
 
-        <div class="card">
-            <h3>Redes</h3>
-            <p>Configuración de redes y soluciones tecnológicas.</p>
-        </div>
+            <button class="prev" onclick="moverSlide(-1)">❮</button>
+            <button class="next" onclick="moverSlide(1)">❯</button>
 
-    </section>
+        </section>
 
-    <footer>
-        <p>© 2026 - Mi Página Web</p>
-    </footer>
+        <section class="servicios">
 
-    <script>
+            <div class="card">
+                <h3>Soporte Técnico</h3>
+                <p>Mantenimiento y servicios agrícolas.</p>
+            </div>
 
-        function contacto() {
-            window.location.href = "https://wa.me/573127380841";
-        }
+            <div class="card">
+                <h3>Páginas Web</h3>
+                <p>Creación de páginas web para negocios.</p>
+            </div>
 
-        let index = 0;
+            <div class="card">
+                <h3>Redes</h3>
+                <p>Configuración de redes y soluciones tecnológicas.</p>
+            </div>
 
-        function moverSlide(direccion) {
+        </section>
 
-            const slides = document.getElementById("slides");
-            const total = slides.children.length;
+        <footer>
+            <p>© 2026 - Mi Página Web</p>
+        </footer>
 
-            index += direccion;
+        <script>
 
-            if (index < 0) {
-                index = total - 1;
+            function contacto() {
+                window.location.href = "https://wa.me/573127380841";
             }
 
-            if (index >= total) {
-                index = 0;
+            let index = 0;
+
+            function moverSlide(direccion) {
+
+                const slides = document.getElementById("slides");
+                const total = slides.children.length;
+
+                index += direccion;
+
+                if (index < 0) {
+                    index = total - 1;
+                }
+
+                if (index >= total) {
+                    index = 0;
+                }
+
+                slides.style.transform = "translateX(" + (-index * 100) + "%)";
             }
 
-            slides.style.transform = "translateX(" + (-index * 100) + "%)";
-        }
+            /* carrusel automático */
 
-        /* carrusel automático */
+            setInterval(function () {
+                moverSlide(1);
+            }, 4000);
 
-        setInterval(function () {
-            moverSlide(1);
-        }, 4000);
+        </script>
 
-    </script>
-
-</body>
+    </body>
 </html>
